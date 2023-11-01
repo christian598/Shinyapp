@@ -24,7 +24,6 @@ mod_abundance_ui <- function(id){
         shiny::plotOutput(
           outputId = ns("abundance")
         )
-
       )
     )
   )
@@ -33,9 +32,21 @@ mod_abundance_ui <- function(id){
 #' abundance Server Functions
 #'
 #' @noRd
+#' @importfrom ggplot2 theme
+#' @import Cdogr
 mod_abundance_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
+
+    output$abundance <- renderPlot({
+      if(input$peptide == ""){
+        NULL
+      } else{
+        input$peptide |>
+          Cdogr::Cdogr_frequencies() +
+          ggplot2::theme(legend.position = "none")
+      }
+    })
 
   })
 }
