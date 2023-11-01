@@ -1,7 +1,7 @@
 Package: cdogr
 Title: cdogr_app
 Version: 0.0.0.9000
-Authors@R:c(
+Authors@R: c(
  .
    )
 Description: Generate and analyze DNA sequence
