@@ -1,29 +1,16 @@
 Package: cdogr
 Title: cdogr_app
 Version: 0.0.0.9000
-Authors@R:
-  c(person(given = "Christian",
-           family = "Christensen",
-           role = c("aut", "cre"), # There must be a "cre", but there can only be one
-           email = "s223096@dtu.dk"), 
-    person(given = "Dea",
-           family = "Bajo",
-           role = "aut",
-           email = "s232105@dtu.dk"),
-    person(given = "Dilan",
-           family = "Cifci",
-           role = "aut",
-           email = "s233597@dtu.dk"),
-    person(given = "Mikkel",
-           family = "Hansen",
-           role = "aut",
-           email = "mikkelpiester@gmail.com")
+Authors@R:c(
+ .
+   )
 Description: Generate and analyze DNA sequence
 License: MIT + file LICENSE
 Imports: 
+    Cdogr,
     config (>= 0.3.1),
+    ggplot2,
     golem (>= 0.4.1),
-    pkgload,
     shiny (>= 1.7.5)
 Encoding: UTF-8
 LazyData: true
