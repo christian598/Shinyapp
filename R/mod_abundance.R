@@ -32,7 +32,7 @@ mod_abundance_ui <- function(id){
 #' abundance Server Functions
 #'
 #' @noRd
-#' @importfrom ggplot2 theme
+#' @importFrom ggplot2 theme
 #' @import Cdogr
 mod_abundance_server <- function(id){
   moduleServer( id, function(input, output, session){
