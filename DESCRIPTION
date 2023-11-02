@@ -1,9 +1,23 @@
 Package: cdogr
 Title: cdogr_app
 Version: 0.0.0.9000
-Authors@R: c(
- .
-   )
+Authors@R:
+  c(person(given = "Christian",
+           family = "Christensen",
+           role = c("aut", "cre"),
+           email = "s223096@dtu.dk"), 
+    person(given = "Dea",
+           family = "Bajo",
+           role = "aut",
+           email = "s232105@dtu.dk"),
+    person(given = "Dilan",
+           family = "Cifci",
+           role = "aut",
+           email = "s233597@dtu.dk"),
+    person(given = "Mikkel",
+           family = "Hansen",
+           role = "aut",
+           email = "mikkelpiester@gmail.com")
 Description: Generate and analyze DNA sequence
 License: MIT + file LICENSE
 Imports: 
