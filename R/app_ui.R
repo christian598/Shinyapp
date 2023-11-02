@@ -12,8 +12,8 @@ app_ui <- function(request) {
     fluidPage(
       h1("cdogr"),
       tabsetPanel(
-        tabPanel(title = "panel1",
-                 "module1"),
+        tabPanel(title = "DNA to Peptide",
+                 mod_dna_expression_ui("dna_expression_1")),
         tabPanel(title = "Abundance",
                  mod_abundance_ui("abundance_1"))
       )
